@@ -1,13 +1,21 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <hora>
+      
+    </hora>
+
+
   </div>
 </template>
-
+<script>
+import hora from '../src/components/hora.vue'
+import clima from '../src/components/Clima.vue'
+export default{
+  components:{
+    hora,clima
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
